@@ -1,0 +1,219 @@
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  }
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-size: 100%;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  
+  /*  Animation background  */
+  .background {
+    
+    background: linear-gradient(132deg, #000000, #828282, #FFF);
+    background-size: 400% 400%;
+    animation: Gradient 12s ease infinite;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden  ;
+  }
+  
+  .bottle {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: bottle 8s ease-in forwards infinite;
+  }
+
+  .bottle:nth-child(1) {
+    border-color: #FFF ;
+  }
+
+  .bottle:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+
+  .bottle:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+
+  .bottle:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+
+  .bottle:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+
+  .bottle:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+
+  .bottle:nth-child(7) {
+    animation-delay: 12s;
+    left: 75vw;
+    top: 75vh;
+  }
+
+  .bottle:nth-child(8) {
+    animation-delay: 14s;
+    left: 10vw;
+    top: 10vh;
+  }
+
+  /*  Header  */
+  header{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    
+    
+    
+  }
+
+  /* navbar */
+  nav{
+    width: 100%;
+	  text-align: center; 
+	  padding: 20px 0;
+	  float: left; 
+  }
+
+  nav ul{
+    display: table; 
+	  width: auto;
+	  margin: 0 auto; 
+	  list-style: none;
+	  padding: 0;
+    
+  }
+
+  nav ul li {
+    float: left;
+    transition: .3s;
+    
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: #EFEEF5;
+    font-size: 20px;
+    margin-left:25px;
+    transition: 0.5s;
+  }
+  nav ul li:hover{      
+    transform: scale(1.2);
+  } 
+  
+  nav ul li a:hover{      
+    color: #1b1116;
+  } 
+
+  /* Header content & title & button*/
+  .header-content{
+    margin-top:15%;
+    text-align: center;
+    color:  #EFEEF5;
+    
+  }
+
+  .header-content h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-shadow: #fff 0.5px 0.5px 0, #fff 1px 1px 0, 
+                 #fff 1.5px 1.5px 0, #fff 2px 2px 0, 
+                 #fff 2.5px 2.5px 0;
+  }
+
+  .header-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px auto;
+  }
+
+  .header-content button{
+    width: 100px;
+    margin:20px 10px;
+    color: #000;
+    font-size: 17px;
+    border:1px solid #000;
+    font-weight: 1000;
+    background: #EFEEF5;
+    border-radius: 10px;
+    padding: 10px;
+    cursor:pointer;
+    transition: .3s;
+    opacity: 80%;
+  }
+
+  .header-content button:hover{
+    
+    border-radius: 50px;
+    
+  }
+
+  .outline_title_wiki{
+    color: white;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    
+  }
+
+  .outline_title_Bottle{
+    color: black;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: white;
+  }
+
+  /* footer */
+  footer  {
+    background-color: #8a7f8e;
+    background-size: 100%;
+    text-align: center;
+    height: 30px;
+  }
+  .Kabeba {
+    padding-top: 8px;
+  }
+  
+  /* Animate Background*/
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    102% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes bottle {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(2) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
