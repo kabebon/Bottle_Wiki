@@ -8,9 +8,9 @@ while(true)
             if(CheckForValidFilm(film) == true){
                 break;
             } 
-            alert('Ты точно тот, кто мне нужен?')
+            PrintValue('Ты точно тот, кто мне нужен?')
     }
-    alert('Не путай себя с железным человеком!')
+    PrintValue('Не путай себя с железным человеком!')
 }
 
 function CheckForValidUser(username){
@@ -27,6 +27,10 @@ function CheckForValidFilm(film){
     } else{
         return false;
     }
+}
+
+function PrintValue(value){
+    alert(value)
 }
 
 
